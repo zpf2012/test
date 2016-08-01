@@ -25,10 +25,6 @@ public class Server extends Thread{
 				PrintWriter pw = new PrintWriter(s.getOutputStream(),true);
 				pw.println(s.getInputStream());
 				
-				ChatSocket cs = new ChatSocket(s);
-				cs.start();
-				
-				
 				
 			}
 			
