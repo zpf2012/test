@@ -22,7 +22,7 @@ public class FileReaderWriter {
 				bw.write(line+"\n");
 			}
 			
-			System.out.println("¶ÁĞ´Íê³É¡£¡£¡£");
+			System.out.println("æ–‡ä»¶å¤åˆ¶ç»“æŸ");
 			bw.close();
 			fw.close();
 			br.close();

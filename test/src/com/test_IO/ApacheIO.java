@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 /**
- * Ê¹ÓÃapacheÌá¹©µÄ¿â½øĞĞÎÄ¼şµÄ²Ù×÷
+ * ä½¿ç”¨Apacheæä¾›çš„apiæ‹·è´æ–‡ä»¶
  * @author zhangpengfei
- *	1.ÏÂÔØ²¢add¿âÎÄ¼şcommons-io-2.5.jar
- *  2.Ê¹ÓÃ¿âÎÄ¼şÌá¹©µÄ·½·¨¶ÁÈ¡ÎÄ¼şºÍ¸´ÖÆÎÄ¼ş
+ *	1.æ·»åŠ commons-io-2.5.jar
+ *  2.ä½¿ç”¨åº“ä¸­æä¾›çš„æ–¹æ³•æ‹·è´æ–‡ä»¶
  */
 public class ApacheIO {
 

@@ -9,7 +9,7 @@ public class ByteStreamRead {
 
 		try {
 			FileInputStream file3 = new FileInputStream("text.txt");
-			byte byarr [] = new byte [10];	//设置的字符数组长度比文件内容大,
+			byte byarr [] = new byte [10];	//鍒涘缓瀛楄妭鏁扮粍
 			file3.read(byarr);
 			
 			String instring = new String(byarr);

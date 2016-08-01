@@ -15,7 +15,7 @@ public class BufferByteStream {
 			BufferedInputStream  bis = new BufferedInputStream(fis);
 			/*
 			 * BufferedInputStream  bis = new BufferedInputStream(fis,1000);
-			 * Ê¹ÓÃ´øÓĞ»º³åÇøµÄ×Ö½ÚÁ÷
+			 * åˆ›å»ºå¸¦æœ‰ç¼“å†²åŒºçš„è¾“å…¥æµ
 			 */
 			
 			
@@ -25,20 +25,20 @@ public class BufferByteStream {
 			int count = 0;
 			long oldtime = System.currentTimeMillis();
 			byte b[] = new byte [1500];
-//			¶ÁĞ´ÎÄ¼ş
+//			è¯»å–æ–‡ä»¶
 			while(bis.read(b) != -1){
 				bos.write(b);
 				count++;
 			};
 			
-//			¹Ø±ÕÁ÷
+//			å…³é—­æµ
 			bos.close();
 			fos.close();
 			bis.close();
 			fis.close();
 			
-			System.out.println("·ÃÎÊ´ÎÊı£º"+count);
-			System.out.println("»¨·ÑÊ±¼ä:"+(System.currentTimeMillis()-oldtime)+"ms");
+			System.out.println("è¯»å–çš„æ¬¡æ•°"+count);
+			System.out.println("æ¶ˆè€—çš„æ—¶é—´:"+(System.currentTimeMillis()-oldtime)+"ms");
 			
 					
 		} catch (FileNotFoundException e) {

@@ -4,25 +4,29 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
+/**
+ * é€šè¿‡è¾“å…¥è¾“å‡ºæµæ‹·è´æ–‡ä»¶
+ * @author zhangpengfei
+ * åˆ©ç”¨å­—èŠ‚æ•°ç»„ä¼ é€æ•°æ®
+ */
 public class FileCopyByByteStream {
 	public static void main(String[] args) {
 		try {
-			//´´½¨ÊäÈëÁ÷ÓÃÀ´¶ÁÈ¡ÎÄ¼ş
+			//åˆ›å»ºæ–‡ä»¶è¾“å…¥æµ
 			FileInputStream fis = new FileInputStream("text.txt");
 			
-			//´´½¨Êä³öÁ÷ÓÃÀ´Ğ´ÈëÎÄ¼ş
+			//åˆ›å»ºæ–‡ä»¶è¾“å‡ºæµ
 			FileOutputStream fos = new FileOutputStream("new_file.txt");
 			StringBuilder sb = new StringBuilder();
-			//´´½¨×Ö½ÚÊı×é´æ·Å¶ÁÈ¡µÄÄÚÈİ
+			//åˆ›å»ºå­—ç¬¦æ•°ç»„
 			byte input[] = new byte[10];
-			//fis.read()·µ»ØÖµÎª-1±íÊ¾¶ÁÈ¡Íê±Ï£¬·ñÔò±íÊ¾¶Áµ½ÁËÄÚÈİ
+			//è¾“å…¥æµè¯»å–åˆ°å­—ç¬¦æ•°ç»„
 			while (fis.read(input)!=-1) {
-			//Ğ´ÈëÎÄ¼ş
+			//å­—ç¬¦æ•°ç»„å†™å…¥è¾“å‡ºæµ
 				fos.write(input);
 			}	
 			
-			//¹Ø±ÕÊäÈëÊä³öÁ÷
+			//å…³é—­è¾“å…¥è¾“å‡ºæµ
 			fos.close();
 			fis.close();
 			

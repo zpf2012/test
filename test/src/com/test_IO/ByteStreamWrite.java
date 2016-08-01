@@ -8,15 +8,15 @@ public class ByteStreamWrite {
 
 	public static void main(String[] args) {
 		try {
-			//´´½¨Êä³öÁ÷
+			//åˆ›å»ºæ–‡ä»¶è¾“å‡ºæµ
 			FileOutputStream fos = new FileOutputStream("text2.txt");
-			//Ô¤ÉèĞ´µ½ÎÄ¼şµÄ×Ö·û´®
+			//è®¾ç½®éœ€è¦å†™å…¥çš„å†…å®¹
 			String s = "write 123123";
-			//×Ö·û´®×ª»»Îª×Ö·ûÊı×é
+			//è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„
 			byte [] b = s.getBytes();
-			//×Ö·ûÊı×éĞ´ÈëÎÄ¼ş
+			//å†™å…¥æ–‡ä»¶
 			fos.write(b);
-			//¹Ø±ÕÊä³öÁ÷
+			//å…³é—­æµ
 			fos.close();
 			
 			
