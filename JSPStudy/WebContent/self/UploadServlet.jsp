@@ -23,6 +23,7 @@ if((contentType.indexOf("multipart/form-data")>=0)){
 	
 	try{
 //此处出错与Servlet有关
+		
 		List<FileItem> fileItems = (List<FileItem>)upload.parseRequest(request);
 //		List fileItems = upload.parseRequest(request);
 		Iterator i = fileItems.iterator();

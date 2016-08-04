@@ -8,13 +8,10 @@
 </head>
 <body>
 	<center>
-		<form action="<%=request.getContextPath()%>/LoginServlet"
-			method="post">
-			username:<input type="text" name="username" /><br /> password:<input
-				type="password" name="password" /><br /> <input type="submit"
-				value="提交" />
-
-		</form>
+		<h3>登陆成功</h3>
+		用户名：<%=request.getParameter("username")%>
+		密码：<%=request.getParameter("password")%>
+		<a href="Login.jsp">返回登陆页面</a>
 	</center>
 </body>
 </html>
