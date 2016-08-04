@@ -22,7 +22,7 @@ public class UserDaoTestDelete {
 			
 			UserDao ud = new UserDaoImpl();
 			User tom = new User();
-			tom.setId(6);
+			tom.setId(4);
 			
 			ud.delete(conn, tom);
 			conn.commit();

@@ -11,7 +11,7 @@
 		<h3>登陆失败</h3>
 		用户名：<%=request.getParameter("username")%>
 		密码：<%=request.getParameter("password")%>
-		<a href="Login.jsp">返回登陆页面</a>
+		<a href="<%=request.getContextPath() %>/02/Login.jsp">返回登陆页面</a>
 	</center>
 </body>
 </html>
