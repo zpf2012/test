@@ -13,11 +13,9 @@ public class Service {
 //	创建用户操作实例
 	private UserDao userDao = new UserDaoImpl();
 	public boolean check(User user){
-		System.out.println("----创建数据库连接-----");
 		Connection conn = null;
 		try {
 			conn = ConnectionFactory.getInstance().makeConn();
-			System.out.println("----创建数据库连接成功-----");
 			conn.setAutoCommit(false);
 //			取得查询结果
 			ResultSet rs = userDao.resultSet(conn, user);

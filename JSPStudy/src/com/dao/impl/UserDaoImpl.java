@@ -48,7 +48,6 @@ public class UserDaoImpl implements UserDao {
 		ps.setString(1, user.getName());
 		ps.setString(2, user.getPassword());
 		ResultSet rs = ps.executeQuery();
-		System.out.println("query");
 		return rs;
 	}
 

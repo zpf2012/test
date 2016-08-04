@@ -29,17 +29,17 @@ public class CheckLogin extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
+		System.out.println("用户名："+username);
+		System.out.println("密码："+password);
 		RequestDispatcher rd = null;
 		String forword = null;
 		if(username != null && password != null){
 			User user = new User();
 			user.setName(username);
 			user.setPassword(password);
-			System.out.println("-------user------");
 			
 			boolean bool = service.check(user);
 			
-			System.out.println(bool);
 			if(bool){
 				forword = "/02/success.jsp";
 				

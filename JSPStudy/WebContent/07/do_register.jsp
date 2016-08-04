@@ -7,7 +7,7 @@
 <title>处理提交的内容</title>
 </head>
 <body>
-<jsp:useBean id="user" class="com.user.User"></jsp:useBean>
+<jsp:useBean id="user" class="com.entities.User"></jsp:useBean>
 <jsp:setProperty property="username" name="user"/>
 <jsp:setProperty property="password" name="user"/>
 <%
