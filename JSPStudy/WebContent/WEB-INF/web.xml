@@ -2,12 +2,12 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>JSPStudy</display-name>
   <servlet>
-  	<servlet-name>HelloServlet</servlet-name>
-  	<servlet-class>com.servlet.HelloServlet</servlet-class>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.servlet.HelloServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<servlet-class>com.servlet.LoginServlet</servlet-class>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
   </servlet>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -18,11 +18,11 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet-mapping>
-  	<servlet-name>HelloServlet</servlet-name>
-  	<url-pattern>/Hello</url-pattern>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/Hello</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<url-pattern>/LoginServlet</url-pattern>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
 </web-app>
