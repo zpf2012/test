@@ -10,23 +10,22 @@ import javax.servlet.ServletResponse;
 
 public class FilterOne implements Filter {
 
-
-    public FilterOne() {
-    	System.out.println("=========构造函数=========");
-    }
-
-
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		System.out.println("===========开始执行doFilter方法============");
-		chain.doFilter(request, response);
+	public FilterOne() {
+		System.out.println("=========构造函数=========");
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
 		System.out.println("========初始化=========");
 		String param = fConfig.getInitParameter("param");
-		System.out.println(param);
+		System.out.println("param:"+param);
 	}
-	
+
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
+		System.out.println("===========开始执行doFilter方法============");
+		chain.doFilter(request, response);
+	}
+
 	public void destroy() {
 		System.out.println("==========销毁Filter===========");
 	}

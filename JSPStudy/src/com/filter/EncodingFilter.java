@@ -26,6 +26,7 @@ public class EncodingFilter implements Filter {
 	 * @see Filter#init(FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
+//		从配置中取出编码参数
 		charEncoding = fConfig.getInitParameter("encoding");
 		System.out.println(charEncoding);
 		if(charEncoding == null){
@@ -39,6 +40,7 @@ public class EncodingFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+//		取出请求页面的编码做对比，执行统一编码
 		if(!charEncoding.equals(request.getCharacterEncoding())){
 			request.setCharacterEncoding(charEncoding);
 		}

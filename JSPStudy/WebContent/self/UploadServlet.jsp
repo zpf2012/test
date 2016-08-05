@@ -1,6 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@page import="org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload"%>
-<%@page import="org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory"%>
 <%@ page import="java.io.*,java.util.*,javax.servlet.*" %> 
 <%@ page import="javax.servlet.http.*" %>
 <%@ page import="org.apache.commons.fileupload.*" %>
